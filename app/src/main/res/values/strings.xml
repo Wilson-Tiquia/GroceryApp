@@ -1,3 +1,30 @@
 <resources>
     <string name="app_name">GroceryApp</string>
+    <string name="splash_screen"> SPLASH SCREEN TO GAGO</string>
+    <!-- Log In Page!-->
+    <string name="log_in"> Log In</string>
+    <string name="create_account"> Create Account </string>
+    <string name="line"> | </string>
+    <string name="forgot_password"> Forgot Password </string>
+    <!-- STRING USER IN LOGIN AND SIGN UP!-->
+    <string name="username"> Username </string>
+    <string name="email_address"> E-mail </string>
+    <string name="password"> Password </string>
+    <!-- Sign Up Page!-->
+    <string name="sign_up"> Sign Up </string>
+    <!-- Email Verification !-->
+    <string name="email_verification"> Email Verification </string>
+    <string name="enter_otp"> Enter your OTP code sent to your email! </string>
+    <string name="resend_otp"> Resend OTP? </string>
+    <string name="verify"> Verify </string>
+    <!-- PICTURE NAME???!-->
+    <string name="usernamepicture"> Username Picture </string>
+    <string name="emailpicture"> Email Picture </string>
+    <string name="passwordpicture"> Password Picture </string>
+    <string name="title_activity_email_verification">EmailVerification</string>
+    <!--VERIF CODE!-->
+    <string name="symbol"> ● </string>
+
+
+
 </resources>

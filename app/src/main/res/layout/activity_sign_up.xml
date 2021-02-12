@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SignUp">
+
+    <!-- SIGNUP NA TEXT SA TAAS  !-->
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="84dp"
+        android:layout_marginRight="84dp"
+        android:layout_marginBottom="540dp"
+        android:text="@string/sign_up"
+        android:textColor="@color/black"
+        android:textSize="30pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- USERNAME INPUT !-->
+    <EditText
+        android:id="@+id/usernameInput"
+        android:layout_width="227dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="96dp"
+        android:layout_marginRight="96dp"
+        android:layout_marginBottom="435dp"
+        android:background="@drawable/roundedshapetext"
+        android:ems="10"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        android:paddingStart="40dp"
+        android:paddingLeft="40dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- EMAIL INPUT !-->
+    <EditText
+        android:id="@+id/emailInput"
+        android:layout_width="227dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="95dp"
+        android:layout_marginRight="95dp"
+        android:layout_marginBottom="347dp"
+        android:background="@drawable/roundedshapetext"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        android:paddingStart="45dp"
+        android:paddingLeft="45dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- PASSWORD INPUT!-->
+    <EditText
+        android:id="@+id/passwordInput"
+        android:layout_width="227dp"
+        android:layout_height="52dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginRight="90dp"
+        android:layout_marginBottom="261dp"
+        android:background="@drawable/roundedshapetext"
+        android:ems="10"
+        android:hint="@string/password"
+        android:importantForAutofill="no"
+        android:inputType="textPassword"
+        android:paddingStart="40dp"
+        android:paddingLeft="40dp"
+        android:paddingEnd="15dp"
+        android:paddingRight="15dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+    <!-- IMAGE SA TABI NI USERNAME !-->
+    <ImageView
+        android:id="@+id/usericon"
+        android:contentDescription="@string/usernamepicture"
+        android:layout_width="24dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginRight="284dp"
+        android:layout_marginBottom="448dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user" />
+    <!-- IMAGE SA TABI NI PASSWORD !-->
+    <ImageView
+        android:id="@+id/passwordicon"
+        android:contentDescription="@string/passwordpicture"
+        android:layout_width="24dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginRight="284dp"
+        android:layout_marginBottom="272dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/padlock" />
+    <!-- IMAGE SA TABI NI EMAIL !-->
+    <ImageView
+        android:id="@+id/emailicon"
+        android:layout_width="24dp"
+        android:layout_height="27dp"
+        android:layout_marginEnd="284dp"
+        android:layout_marginRight="284dp"
+        android:layout_marginBottom="360dp"
+        android:contentDescription="@string/emailpicture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/email" />
+    <!-- SIGN UP BUTTON !-->
+    <Button
+        android:id="@+id/signUpButton"
+        android:layout_width="176dp"
+        android:layout_height="57dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginRight="116dp"
+        android:layout_marginBottom="136dp"
+        android:background="@drawable/roundedbutton"
+        android:text="@string/sign_up"
+        android:textAllCaps="false"
+        app:backgroundTint="#FFC107"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
