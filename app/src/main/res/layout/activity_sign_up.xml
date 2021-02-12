@@ -115,6 +115,8 @@
     <!-- SIGN UP BUTTON !-->
     <Button
         android:id="@+id/signUpButton"
+        android:onClick="goToEmailVerification"
+
         android:layout_width="176dp"
         android:layout_height="57dp"
         android:layout_marginEnd="116dp"
