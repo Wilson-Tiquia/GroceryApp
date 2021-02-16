@@ -124,6 +124,7 @@
         android:layout_marginBottom="200dp"
         android:background="@drawable/roundedbutton"
         android:text="@string/verify"
+        android:onClick="codeInput"
         android:textAllCaps="false"
         app:backgroundTint="#FFC107"
         app:layout_constraintBottom_toBottomOf="parent"

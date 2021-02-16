@@ -121,14 +121,11 @@
         android:layout_marginRight="116dp"
         android:layout_marginBottom="136dp"
         android:background="@drawable/roundedbutton"
-        android:clickable="true"
-        android:onClick="handleText"
         android:text="@string/sign_up"
         android:textAllCaps="false"
         app:backgroundTint="#FFC107"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:focusable="true" />
+        app:layout_constraintEnd_toEndOf="parent"/>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
