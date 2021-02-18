@@ -66,6 +66,7 @@ public class Registration{
         return originalCode.equals(inputVerificationCode);
     }
 
+    // pag nag kinlick otp start timer :)
     public void resendOTP(TextView otp, TextView timer){
         new CountDownTimer(30000,1000){
             @Override

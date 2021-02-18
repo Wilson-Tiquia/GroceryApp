@@ -37,6 +37,7 @@ public class EmailVerification extends AppCompatActivity {
         verificationCode=getInfo.getStringExtra("originalVerificationCode");
         emailAddress = credential[1];
     }
+
     public void codeInput (){
         if (isResendOTPClicked){
             verificationCode = newCode;
@@ -53,8 +54,8 @@ public class EmailVerification extends AppCompatActivity {
         else{
             Toast.makeText(this, "INCORRECT VERIF CODE TANGA MO ", Toast.LENGTH_SHORT).show();
         }
-        Log.d("info", "verification code " + verificationCode);
     }
+
     public void resendOTP(){
         isResendOTPClicked = true;
         newCode = user.getVerificationCode();
