@@ -29,7 +29,7 @@ public class SignUp extends AppCompatActivity {
         EditText [] inputArray = { findViewById(R.id.usernameInput), findViewById(R.id.emailInput), findViewById(R.id.passwordInput) };
         Registration user = new Registration();
         user.setCredentials(inputArray);
-        String [] credentialArrayString = user.getCredentials(); // 0 = usernme // 1 = email //2 = pass
+        String [] credentialArrayString = user.getCredentials(); // 0 = username // 1 = email //2 = pass
         String verificationCode = user.getVerificationCode();
         JavaMailAPI javaMailAPI = new JavaMailAPI(this, credentialArrayString[1], user.getSubjectOfEmail(),verificationCode);
         javaMailAPI.execute();
