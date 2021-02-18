@@ -8,18 +8,16 @@ import android.os.Handler;
 
 public class MainActivity extends AppCompatActivity {
     private static int splashTime = 1000;
+    // splash screen
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-        new Handler().postDelayed(new Runnable() {
-            @Override
-            public void run() {
-                Intent homeIntent = new Intent(MainActivity.this, LogIn.class);
-                startActivity(homeIntent);
-                finish();
-            }
+        new Handler().postDelayed(() -> {
+            Intent homeIntent = new Intent(MainActivity.this, LogIn.class);
+            startActivity(homeIntent);
+            finish();
         }, splashTime);
     }
 }
