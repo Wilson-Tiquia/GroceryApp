@@ -49,14 +49,13 @@ public class EmailVerification extends AppCompatActivity {
             Intent goToLogin = new Intent(this, LogIn.class);
             startActivity(goToLogin);
             finish();
-
         }
         else{
             Toast.makeText(this, "INCORRECT VERIF CODE TANGA MO ", Toast.LENGTH_SHORT).show();
         }
+        Log.d("info", "verification code " + verificationCode);
     }
     public void resendOTP(){
-
         isResendOTPClicked = true;
         newCode = user.getVerificationCode();
         // send the code to email
@@ -65,19 +64,6 @@ public class EmailVerification extends AppCompatActivity {
         // code sa timer
         TextView resendOTP = findViewById(R.id.resendOTP);
         TextView timer = findViewById(R.id.timer);
-        new CountDownTimer(30000,1000){
-            @Override
-            public void onTick(long millisUntilFinished) {
-                timer.setVisibility(View.VISIBLE);
-                timer.setText(String.valueOf(millisUntilFinished/ 1000));
-                resendOTP.setClickable(false);
-            }
-            @Override
-            public void onFinish() {
-                timer.setVisibility(View.GONE);
-                resendOTP.setClickable(true);
-                isResendOTPClicked = false;
-            }
-        }.start();
+        user.resendOTP(resendOTP, timer);
     }
 }

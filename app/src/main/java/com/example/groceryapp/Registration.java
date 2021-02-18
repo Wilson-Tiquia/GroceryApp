@@ -3,8 +3,11 @@ package com.example.groceryapp;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.os.CountDownTimer;
 import android.provider.ContactsContract;
+import android.view.View;
 import android.widget.EditText;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
@@ -63,8 +66,19 @@ public class Registration{
         return originalCode.equals(inputVerificationCode);
     }
 
-
-
-
-
+    public void resendOTP(TextView otp, TextView timer){
+        new CountDownTimer(30000,1000){
+            @Override
+            public void onTick(long millisUntilFinished) {
+                timer.setVisibility(View.VISIBLE);
+                timer.setText(String.valueOf(millisUntilFinished/ 1000));
+                otp.setClickable(false);
+            }
+            @Override
+            public void onFinish() {
+                timer.setVisibility(View.GONE);
+                otp.setClickable(true);
+            }
+        }.start();
+    }
 }
