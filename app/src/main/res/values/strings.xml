@@ -58,4 +58,13 @@
     <string name="terms_and_conditions"> Terms And Conditions</string>
 
 
+
+    <!-- VERIFY PASSWORD PAGE !-->
+    <string name="verify_password">  Verify Password </string>
+    <string name="verify_password_subtext"> Keep your account safe, please verify your </string>
+    <string name="verify_password_subtext2"> identity by entering your password.</string>
+    <string name="back"> Go Back Arrow Icon</string>
+    <string name="current_password"> Current Password</string>
+    <string name="continue_password"> Continue </string>
+    <string name="forgot_password_settings"> <u> Forgot Password?</u> </string>
 </resources>

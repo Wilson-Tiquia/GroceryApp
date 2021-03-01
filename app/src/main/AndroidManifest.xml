@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GroceryApp.NoActionBar">
-        <activity android:name=".AccountDetails"></activity>
+        <activity android:name=".VerifyPassword"></activity>
+        <activity android:name=".AccountDetails" />
         <activity android:name=".Settings" />
         <activity android:name=".EmailVerification" />
         <activity android:name=".SignUp" />
