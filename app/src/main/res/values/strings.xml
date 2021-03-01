@@ -25,6 +25,37 @@
     <!--VERIF CODE!-->
     <string name="symbol"> ● </string>
 
+    <!-- Edit MY Account!-->
+    <string name="save_button"> Save Button Picture</string>
+    <string name="profile_picture"> Profile Picture</string>
+    <string name="delivery_address">  Delivery Address </string>
+    <string name="add"> + Add </string>
+    <string name="personal_details"> Personal Details </string>
+    <string name="full_name">  Full Name </string>
+    <string name="email_address_settings_test"> ashley.yulo@gmail.com </string>
+    <string name="phone_number"> Phone Number </string>
+    <string name="change_password"> Change Password </string>
+    <string name="philippine_number_code"> +63 </string>
+    <string name="empty"> </string>
+
+
+    <string name="whiteShape"> White Shape Rounded bottom left and right</string>
+    <string name="address"> Address</string>
+
+
+    <!-- BOTTOM BAR CLICKABLE IMAGE STRING!-->
+    <string name="food"> Food Icon</string>
+    <string name="recipe"> Recipe Icon</string>
+    <string name="cart"> Cart Icon</string>
+
+    <!-- SETTINGS PAGE -->
+    <string name="current_orders"> Current Orders</string>
+    <string name="past_orders"> Past Orders</string>
+    <string name="edit_account"> Edit My Account</string>
+    <string name="my_payment"> My Payment</string>
+    <string name="favorites"> Favorites </string>
+    <string name="faqs"> Faqs </string>
+    <string name="terms_and_conditions"> Terms And Conditions</string>
 
 
 </resources>

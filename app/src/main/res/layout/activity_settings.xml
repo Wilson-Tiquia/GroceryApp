@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".Settings">
+
+    <TextView
+        android:id="@+id/white_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/whitebackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="281dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="584dp"
+        android:contentDescription="@string/profile_picture"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user_2" />
+
+    <TextView
+        android:id="@+id/full_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="600dp"
+        android:text="@string/full_name"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:textSize="20pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/current_orders_button"
+        android:layout_width="298dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="500dp"
+        android:background="@color/smoke"
+        android:gravity="center|start"
+        android:paddingStart="70dp"
+        android:paddingEnd="0dp"
+        android:text="@string/current_orders"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/current_orders_icon"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="508dp"
+        android:contentDescription="@string/current_orders"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/currentorder" />
+
+    <Button
+        android:id="@+id/past_orders_button"
+        android:layout_width="298dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="448dp"
+        android:background="@color/smoke"
+        android:gravity="center|start"
+        android:paddingStart="70dp"
+        android:paddingEnd="0dp"
+        android:text="@string/past_orders"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/past_orders_icon"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="456dp"
+        android:contentDescription="@string/past_orders"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/pastorders" />
+
+    <Button
+        android:id="@+id/edit_account_button"
+        android:layout_width="298dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="356dp"
+        android:background="@color/smoke"
+        android:gravity="center|start"
+        android:paddingStart="70dp"
+        android:paddingEnd="0dp"
+        android:text="@string/edit_account"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/my_payment_button"
+        android:layout_width="298dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="304dp"
+        android:background="@color/smoke"
+        android:gravity="center|start"
+        android:paddingStart="70dp"
+        android:paddingEnd="0dp"
+        android:text="@string/my_payment"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/my_payment_icon"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="312dp"
+        android:contentDescription="@string/my_payment"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/symbols" />
+
+    <Button
+        android:id="@+id/favorites_button"
+        android:layout_width="298dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="252dp"
+        android:background="@color/smoke"
+        android:gravity="center|start"
+        android:paddingStart="70dp"
+        android:paddingEnd="0dp"
+        android:text="@string/favorites"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/favorites_icon"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="260dp"
+        android:contentDescription="@string/favorites"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/like" />
+
+    <ImageView
+        android:id="@+id/edit_account_icon"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="364dp"
+        android:contentDescription="@string/edit_account"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/gear" />
+
+    <Button
+        android:id="@+id/faqs_button"
+        android:layout_width="298dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="168dp"
+        android:background="@color/smoke"
+        android:gravity="center|start"
+        android:paddingStart="70dp"
+        android:paddingEnd="0dp"
+        android:text="@string/faqs"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/facs_icon"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="176dp"
+        android:contentDescription="@string/faqs"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/question_mark" />
+
+    <Button
+        android:id="@+id/terms_and_conditions_button"
+        android:layout_width="298dp"
+        android:layout_height="41dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="116dp"
+        android:background="@color/smoke"
+        android:gravity="center|start"
+        android:paddingStart="70dp"
+        android:paddingEnd="0dp"
+        android:text="@string/terms_and_conditions"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/terms_and_conditions_icon"
+        android:layout_width="40dp"
+        android:layout_height="26dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="124dp"
+        android:contentDescription="@string/favorites"
+        android:elevation="5dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/terms_and_conditions" />
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user"
+        android:contentDescription="@string/usernamepicture"/>
+
+    <ImageView
+        android:id="@+id/groceryButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/grocery"
+        android:contentDescription="@string/food"/>
+
+    <ImageView
+        android:id="@+id/recipeButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="8dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/chef_hat"
+        android:contentDescription="@string/recipe"/>
+
+    <ImageView
+        android:id="@+id/cartButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/shopping_cart" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
