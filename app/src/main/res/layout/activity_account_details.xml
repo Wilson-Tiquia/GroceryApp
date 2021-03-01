@@ -4,6 +4,218 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/yellow"
     tools:context=".AccountDetails">
+
+    <TextView
+        android:id="@+id/white_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="66dp"
+        android:background="@drawable/whitebackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/profile_picture"
+        android:layout_width="281dp"
+        android:layout_height="121dp"
+        android:layout_marginEnd="100dp"
+        android:layout_marginBottom="584dp"
+        android:contentDescription="@string/profile_picture"
+        android:scaleType="fitStart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user_2" />
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/usernamepicture"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/groceryButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/food"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/grocery" />
+
+    <ImageView
+        android:id="@+id/recipeButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/chef_hat" />
+
+    <ImageView
+        android:id="@+id/cartButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/shopping_cart" />
+
+    <EditText
+        android:id="@+id/username_input"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="40dp"
+        android:layout_marginBottom="612dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/username"
+        android:importantForAutofill="no"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/save_changes_icon"
+        android:layout_width="20dp"
+        android:layout_height="19dp"
+        android:layout_marginEnd="36dp"
+        android:layout_marginBottom="668dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:contentDescription="@string/save_button"
+        app:srcCompat="@drawable/diskette" />
+
+    <TextView
+        android:id="@+id/deliver_address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="268dp"
+        android:layout_marginBottom="500dp"
+        android:contentDescription="@string/save_button"
+        android:text="@string/delivery_address"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/diskette" />
+
+    <TextView
+        android:id="@+id/personal_details_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="264dp"
+        android:layout_marginBottom="344dp"
+        android:contentDescription="@string/save_button"
+        android:text="@string/personal_details"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/diskette" />
+
+    <EditText
+        android:id="@+id/address_input"
+        android:layout_width="315dp"
+        android:layout_height="81dp"
+        android:layout_marginEnd="56dp"
+        android:layout_marginBottom="400dp"
+        android:background="@drawable/rectangle"
+        android:ems="10"
+        android:gravity="start|top"
+        android:hint="@string/address"
+        android:importantForAutofill="no"
+        android:inputType="textMultiLine"
+        android:paddingStart="20dp"
+        android:paddingTop="10dp"
+        android:paddingEnd="0dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/add_address_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="72dp"
+        android:layout_marginBottom="452dp"
+        android:text="@string/add"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/full_name_input"
+        android:layout_width="305dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="280dp"
+        android:ems="10"
+        android:hint="@string/full_name"
+        android:importantForAutofill="no"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/email_address_input"
+        android:layout_width="305dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="216dp"
+        android:ems="10"
+        android:hint="@string/email_address"
+        android:importantForAutofill="no"
+        android:inputType="textEmailAddress"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <EditText
+        android:id="@+id/phone_number_input"
+        android:layout_width="305dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="152dp"
+        android:ems="10"
+        android:paddingStart="40dp"
+        android:paddingEnd="0dp"
+        android:hint="@string/phone_number"
+        android:importantForAutofill="no"
+        android:inputType="phone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/phCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="335dp"
+        android:layout_marginBottom="165dp"
+        android:text="@string/philippine_number_code"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/change_password_button"
+        android:layout_width="162dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="208dp"
+        android:layout_marginBottom="88dp"
+        android:background="@drawable/rectangleroundedcorner"
+        android:backgroundTint="@color/smoke"
+        android:text="@string/change_password"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
