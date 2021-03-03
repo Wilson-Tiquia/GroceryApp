@@ -1,0 +1,249 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/yellow"
+    tools:context=".RecipePage">
+
+    <TextView
+        android:id="@+id/white_background"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="64dp"
+        android:background="@drawable/whitebackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/soup_button"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="120dp"
+        android:layout_marginBottom="564dp"
+        android:contentDescription="@string/soup"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/hot_food" />
+
+    <ImageView
+        android:id="@+id/noodles_button"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="564dp"
+        android:contentDescription="@string/noodles"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/noodles" />
+
+    <ImageView
+        android:id="@+id/fried_button"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="256dp"
+        android:layout_marginBottom="564dp"
+        android:contentDescription="@string/fried"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/frying_pan" />
+
+    <ImageView
+        android:id="@+id/grilled_button"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="564dp"
+        android:contentDescription="@string/grilled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/bbq" />
+
+    <ImageView
+        android:id="@+id/all_button"
+        android:layout_width="50dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="328dp"
+        android:layout_marginBottom="564dp"
+        android:contentDescription="@string/all"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/dinner" />
+
+    <ImageView
+        android:id="@+id/settingsButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="300dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/usernamepicture"
+        android:onClick="goToSettings"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user" />
+
+    <ImageView
+        android:id="@+id/groceryButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="220dp"
+        android:onClick="goToLandingPage"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/food"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/grocery" />
+
+    <ImageView
+        android:id="@+id/recipeButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="132dp"
+        android:layout_marginBottom="8dp"
+        android:contentDescription="@string/recipe"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/chef_hat" />
+
+    <ImageView
+        android:id="@+id/cartButton"
+        android:layout_width="49dp"
+        android:layout_height="45dp"
+        android:layout_marginEnd="52dp"
+        android:layout_marginBottom="5dp"
+        android:contentDescription="@string/cart"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/shopping_cart" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="276dp"
+        android:layout_marginBottom="652dp"
+        android:text="@string/new_dishes_text"
+        android:textColor="@color/orange"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="220dp"
+        android:layout_marginBottom="680dp"
+        android:text="@string/easy_way_text"
+        android:textColor="@color/black"
+        android:textSize="8pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/search_image_button"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginBottom="656dp"
+        android:contentDescription="@string/searchIcon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/magnifiying_glass" />
+
+    <ImageView
+        android:id="@+id/yellowContainer"
+        android:layout_width="242dp"
+        android:layout_height="354dp"
+        android:layout_marginEnd="92dp"
+        android:layout_marginBottom="85dp"
+        android:scaleType="fitCenter"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:contentDescription="@string/yellow_container"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/recipeyellowcontainer" />
+
+    <TextView
+        android:id="@+id/item_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="236dp"
+        android:layout_marginBottom="140dp"
+        android:gravity="start"
+        android:text="@string/price_item"
+        android:textColor="@color/black"
+        android:textSize="12pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/food_more_info"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="204dp"
+        android:layout_marginBottom="112dp"
+        android:text="@string/click_for_info"
+        android:textSize="5pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/food_image"
+        android:layout_width="183dp"
+        android:contentDescription="@string/image_preview"
+        android:layout_height="205dp"
+        android:layout_marginEnd="188dp"
+        android:layout_marginBottom="280dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/user_2" />
+
+    <TextView
+        android:id="@+id/food_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="148dp"
+        android:layout_marginBottom="216dp"
+        android:text="@string/food_name"
+        android:textSize="13pt"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/item_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="140dp"
+        android:layout_marginBottom="196dp"
+        android:text="@string/description_chosen_item"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <ImageView
+        android:id="@+id/add_to_cart_symbol"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_marginEnd="116dp"
+        android:layout_marginBottom="128dp"
+        android:contentDescription="@string/plus_sign_icon"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:srcCompat="@drawable/plus" />
+
+    <TextView
+        android:id="@+id/textView8"
+        android:paddingStart="3dp"
+        android:paddingEnd="0dp"
+        android:layout_width="30dp"
+        android:layout_height="29dp"
+        android:layout_marginEnd="80dp"
+        android:layout_marginBottom="128dp"
+        android:background="@drawable/rounded_corner"
+        android:gravity="center"
+        android:text="@string/number_one"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

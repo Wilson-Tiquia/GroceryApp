@@ -260,6 +260,7 @@
         android:layout_height="45dp"
         android:layout_marginEnd="132dp"
         android:layout_marginBottom="8dp"
+        android:onClick="goToRecipe"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/chef_hat"

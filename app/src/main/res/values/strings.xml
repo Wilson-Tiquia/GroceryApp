@@ -99,5 +99,18 @@
     <string name="add_quantity_icon"> Add Quantity Icon</string>
     <string name="reduce_quantity_icon"> Reduce Quantity Icon</string>
 
+    <!-- RECIPE PAGE !-->
+    <string name="easy_way_text"> An [easy] way to try</string>
+    <string name="new_dishes_text">  New Dishes!</string>
+    <string name="food_name">  Food Name</string>
+    <string name="click_for_info">  <u> click for more info </u></string>
+    <string name="plus_sign_icon">  <u> Plus Sign </u></string>
 
+    <!-- RECIPE PAGE ICONS-->
+    <string name="all"> All Icon</string>
+    <string name="fried">  Fried Icon</string>
+    <string name="grilled">Grilled Icon</string>
+    <string name="soup">  Soup Icon</string>
+    <string name="yellow_container">  Yellow Container Shape</string>
+    <string name="noodles">  Noodles Icon</string>
 </resources>

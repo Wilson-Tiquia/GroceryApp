@@ -21,4 +21,8 @@ public class Settings extends AppCompatActivity {
         Intent intent = new Intent(this, LandingPage.class);
         startActivity(intent);
     }
+    public void goToRecipe(View v){
+        Intent intent = new Intent(this, RecipePage.class);
+        startActivity(intent);
+    }
 }
