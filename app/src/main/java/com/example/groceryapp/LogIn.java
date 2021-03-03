@@ -17,6 +17,11 @@ public class LogIn extends AppCompatActivity {
 
 
     }
+    public void goToLandingPage(View v){
+        Intent intent = new Intent(this, LandingPage.class);
+        startActivity(intent);
+        finish();
+    }
 
     public void goToSignUp (View v){
         Intent intent = new Intent(LogIn.this, SignUp.class);

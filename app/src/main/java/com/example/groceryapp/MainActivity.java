@@ -15,7 +15,7 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         new Handler().postDelayed(() -> {
-            Intent homeIntent = new Intent(MainActivity.this, VerifyPassword.class);
+            Intent homeIntent = new Intent(MainActivity.this, LogIn.class);
             startActivity(homeIntent);
             finish();
         }, splashTime);

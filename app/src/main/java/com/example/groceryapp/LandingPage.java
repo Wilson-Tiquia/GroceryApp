@@ -6,17 +6,19 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 
-public class ResetPasswordChannel extends AppCompatActivity {
+public class LandingPage extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_reset_password_channel);
+        setContentView(R.layout.activity_landing_page);
     }
-    public void goToVerifyPassword(View v){
-        Intent intent = new Intent(this, VerifyPassword.class);
+
+
+    public void goToSettings(View v){
+        Intent intent = new Intent(this, Settings.class);
         startActivity(intent);
     }
-
-
 }
+
+

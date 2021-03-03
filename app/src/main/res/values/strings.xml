@@ -72,7 +72,30 @@
 
 
     <!-- RESET PASSWORD !-->
-    
+
     <string name="select_channel"> Select the channel you wish to reset your </string>
     <string name="select_channel2"> password: </string>
+
+
+
+    <!-- LANDING PAGE !-->
+    <string name="search"> Search...</string>
+    <string name="searchIcon"> Search Icon</string>
+    <string name="meat_icon"> Meat Icon</string>
+    <string name="fish_icon"> Fish Icon</string>
+    <string name="vegetable_icon">  Vegetables Icon</string>
+    <string name="fruit_icon">  Fruits Icon</string>
+    <string name="jar_icon">  Jar Icon</string>
+    <string name="image_preview"> Image Preview</string>
+    <string name="image_background"> Background Shape</string>
+    <string name="price_item"> ₱ 500</string>
+    <string name="item_description">  Item Description</string>
+    <string name="item_name">  Item Name</string>
+
+
+    <!-- ITEM/PRODUCT CLICKED !-->
+
+
+
+
 </resources>
