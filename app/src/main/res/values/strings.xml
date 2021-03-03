@@ -77,7 +77,6 @@
     <string name="select_channel2"> password: </string>
 
 
-
     <!-- LANDING PAGE !-->
     <string name="search"> Search...</string>
     <string name="searchIcon"> Search Icon</string>
@@ -88,14 +87,17 @@
     <string name="jar_icon">  Jar Icon</string>
     <string name="image_preview"> Image Preview</string>
     <string name="image_background"> Background Shape</string>
-    <string name="price_item"> ₱ 500</string>
+    <string name="price_item"> ₱500</string>
     <string name="item_description">  Item Description</string>
     <string name="item_name">  Item Name</string>
 
 
     <!-- ITEM/PRODUCT CLICKED !-->
-
-
+    <string name="add_to_cart">  Add To Cart</string>
+    <string name="number_one">  1 </string>
+    <string name="description_chosen_item">  Item description ulet yata </string>
+    <string name="add_quantity_icon"> Add Quantity Icon</string>
+    <string name="reduce_quantity_icon"> Reduce Quantity Icon</string>
 
 
 </resources>
