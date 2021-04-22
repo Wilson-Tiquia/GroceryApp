@@ -4,9 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.os.CountDownTimer;
 import android.util.Log;
-import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
@@ -21,12 +19,13 @@ public class EmailVerification extends AppCompatActivity {
     public String verificationCode ="";
     public String newCode;
     public String emailAddress;
+    Button btnClick;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_email_verification);
         // button para mapindot verify
-        Button btn = findViewById(R.id.button);
+        Button btn = findViewById(R.id.btn_verify);
         btn.setOnClickListener(v -> codeInput());
         // textview para mapindot yung resend otp
         TextView tv = findViewById(R.id.resendOTP);
@@ -39,12 +38,30 @@ public class EmailVerification extends AppCompatActivity {
     }
 
     public void codeInput (){
+        btnClick = findViewById(R.id.btn_verify);
         if (isResendOTPClicked){
             verificationCode = newCode;
         }
         EditText [] codes = { findViewById(R.id.firstCode), findViewById(R.id.secondCode), findViewById(R.id.thirdCode), findViewById(R.id.fourthCode)};
         if(user.isVerificationCodeSame(verificationCode,codes)){
             // save data to database :)
+            Intent getData = getIntent();
+            RegistrationModel newUser;
+            String [] userCredentials = getData.getStringArrayExtra("credentials");
+            // save to database
+            try {
+                newUser = new RegistrationModel(-1, userCredentials[0], userCredentials[1],userCredentials[2] );
+                Toast.makeText(this, newUser.toString(), Toast.LENGTH_SHORT).show();
+            }
+            catch (Exception ex){
+                newUser = new RegistrationModel(-1, "error", "error", "error");
+            }
+            // database helper
+            DataBaseHelper dataBaseHelper = new DataBaseHelper(EmailVerification.this);
+            boolean success = dataBaseHelper.addAccount(newUser);
+            Toast.makeText(this, "Success  " + success, Toast.LENGTH_SHORT).show();
+
+
 
             // redirect to login page
             Intent goToLogin = new Intent(this, LogIn.class);

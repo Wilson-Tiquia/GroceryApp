@@ -18,12 +18,13 @@
 
     <ImageView
         android:id="@+id/profile_picture"
-        android:layout_width="281dp"
-        android:layout_height="121dp"
-        android:layout_marginEnd="100dp"
+        android:layout_width="104dp"
+        android:layout_height="97dp"
+        android:layout_marginEnd="270dp"
+        android:onClick="chooseImage"
         android:layout_marginBottom="584dp"
         android:contentDescription="@string/profile_picture"
-        android:scaleType="fitStart"
+        android:scaleType="centerCrop"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/user_2" />
@@ -75,7 +76,7 @@
         app:srcCompat="@drawable/shopping_cart" />
 
     <EditText
-        android:id="@+id/username_input"
+        android:id="@+id/settings_username"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginEnd="40dp"
@@ -167,7 +168,7 @@
         app:layout_constraintEnd_toEndOf="parent" />
 
     <EditText
-        android:id="@+id/email_address_input"
+        android:id="@+id/settings_email"
         android:layout_width="305dp"
         android:layout_height="46dp"
         android:layout_marginEnd="60dp"
