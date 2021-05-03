@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/yellowcontainer"
+        android:layout_width="242dp"
+        android:layout_height="370dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="80dp"
+        android:background="@drawable/recipeyellowcontainer" />
+
+    <ImageView
+        android:id="@+id/foodImageRecipe"
+        android:layout_marginTop="-430dp"
+        android:layout_marginLeft="20dp"
+        android:layout_width="183dp"
+        android:layout_height="205dp"
+        app:srcCompat="@drawable/user_2" />
+
+    <TextView
+        android:id="@+id/foodNameRecipe"
+        android:layout_width="220dp"
+        android:layout_height="34dp"
+        android:layout_marginLeft="100dp"
+        android:text="TextView"
+        android:textColor="@color/black"
+        android:textSize="25sp" />
+
+    <TextView
+        android:id="@+id/foodDescriptionRecipe"
+        android:layout_width="218dp"
+        android:layout_height="120dp"
+        android:layout_marginLeft="100dp"
+        android:text="TextView"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/foodPriceRecipe"
+        android:layout_width="wrap_content"
+        android:layout_height="44dp"
+        android:textSize="25sp"
+        android:layout_marginLeft="100dp"
+        android:text="500"
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/moreinfo"
+        android:layout_width="wrap_content"
+        android:layout_height="34dp"
+        android:layout_marginTop="-5dp"
+        android:layout_marginLeft="100dp"
+        android:text="@string/click_for_info"
+        android:textColor="@color/black" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_marginTop="-57dp"
+        android:layout_gravity="end"
+        android:layout_width="37dp"
+        android:layout_height="36dp"
+        android:layout_marginRight="120dp"
+        app:srcCompat="@drawable/plus" />
+
+
+</LinearLayout>

@@ -113,4 +113,6 @@
     <string name="soup">  Soup Icon</string>
     <string name="yellow_container">  Yellow Container Shape</string>
     <string name="noodles">  Noodles Icon</string>
+
+    <string name="linebar"> ____________________________________________________________  </string>
 </resources>

@@ -12,7 +12,9 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GroceryApp.NoActionBar">
-        <activity android:name=".RecipePage"></activity>
+        <activity android:name=".Instructions"></activity>
+        <activity android:name=".RecipeClick" />
+        <activity android:name=".RecipePage" />
         <activity android:name=".GroceryItem" />
         <activity android:name=".LandingPage" />
         <activity android:name=".ResetPasswordChannel" />
