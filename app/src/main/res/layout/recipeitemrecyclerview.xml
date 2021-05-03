@@ -57,7 +57,7 @@
         android:textColor="@color/black" />
 
     <ImageView
-        android:id="@+id/imageView5"
+        android:id="@+id/addItem"
         android:layout_marginTop="-57dp"
         android:layout_gravity="end"
         android:layout_width="37dp"

@@ -15,6 +15,15 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent" />
 
+    <ImageView
+        android:id="@+id/imageView4"
+        android:layout_width="59dp"
+        android:onClick="goToRecipeClick"
+        android:layout_height="35dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/left_arrow" />
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"

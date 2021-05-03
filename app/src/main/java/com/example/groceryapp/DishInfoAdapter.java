@@ -1,6 +1,8 @@
 package com.example.groceryapp;
 
 import android.content.Context;
+import android.content.Intent;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,6 +10,7 @@ import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
+import androidx.appcompat.view.menu.MenuView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
@@ -18,35 +21,50 @@ public class DishInfoAdapter extends RecyclerView.Adapter<DishInfoAdapter.ViewHo
     RecyclerView recyclerView;
     private RecyclerViewClickListener listener;
 
-
-    public class ViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener{
+    public class ViewHolder extends RecyclerView.ViewHolder /*implements View.OnClickListener*/{
         TextView dishname;
         ImageView dishpic;
         TextView dishDescription;
         TextView dishprice;
         TextView moreInfo;
+        ImageView addItem;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
             dishname = (TextView) itemView.findViewById(R.id.foodNameRecipe);
             dishpic = (ImageView) itemView.findViewById(R.id.foodImageRecipe);
             dishDescription = (TextView) itemView.findViewById(R.id.foodDescriptionRecipe);
             dishprice = (TextView) itemView.findViewById(R.id.foodPriceRecipe);
+            addItem = itemView.findViewById(R.id.addItem);
             moreInfo = itemView.findViewById(R.id.moreinfo);
-            itemView.findViewById(R.id.moreinfo).setOnClickListener(this);
-        }
+            //itemView.findViewById(R.id.moreinfo).setOnClickListener(this);
+            //itemView.findViewById(R.id.addItem).setOnClickListener(this);
+            moreInfo.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.moreInfoClick(v, getAdapterPosition());
+                }
+            });
+            addItem.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    listener.addCartClick(v,getAdapterPosition());
 
+                }
+            });
+        }
+        /*
         @Override
         public void onClick(View v) {
-            listener.onClick(v, getAdapterPosition());
 
-        }
+            listener.onClick(v, getAdapterPosition());
+            Log.d("PININDOT", v);
+        }*/
     }
     public DishInfoAdapter (Context context, ArrayList<DishInfo> dishInfos, RecyclerView rv, RecyclerViewClickListener listener){
         this.context = context;
         this.dishInfoArrayList = dishInfos;
         this.recyclerView = rv;
         this.listener = listener;
-
     }
 
     @NonNull
@@ -74,6 +92,8 @@ public class DishInfoAdapter extends RecyclerView.Adapter<DishInfoAdapter.ViewHo
     }
 
     public interface RecyclerViewClickListener {
-        void onClick(View v, int position);
+        void moreInfoClick(View v, int position);
+        void addCartClick(View v, int position);
+
     }
 }

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.TextView;
 
 import java.util.ArrayList;
@@ -17,6 +18,8 @@ public class Instructions extends AppCompatActivity {
     ArrayList<String> instructionsList;
     RecyclerView recyclerView;
     RecyclerView.LayoutManager layoutManager;
+    String foodnameStr = "";
+    String foodDescriptionStr = "";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,8 +27,8 @@ public class Instructions extends AppCompatActivity {
 
         // get name and descr from prev activity
         Intent intent = getIntent();
-        String foodnameStr = intent.getStringExtra("foodname");
-        String foodDescriptionStr = intent.getStringExtra("fooddescription");
+        foodnameStr = intent.getStringExtra("foodname");
+        foodDescriptionStr = intent.getStringExtra("fooddescription");
         // set ids
         foodname = findViewById(R.id.dishNameInstructions);
         foodDescription = findViewById(R.id.dishDescriptionInstructions);
@@ -49,5 +52,11 @@ public class Instructions extends AppCompatActivity {
         InstructionsAdapter instructionsAdapter = new InstructionsAdapter(this,instructionsList,recyclerView);
         recyclerView.setAdapter(instructionsAdapter);
 
+    }
+    public void goToRecipeClick (View v){
+        Intent intent = new Intent(this, RecipeClick.class);
+        intent.putExtra("foodname", foodnameStr);
+        intent.putExtra("fooddescription", foodDescriptionStr);
+        startActivity(intent);
     }
 }

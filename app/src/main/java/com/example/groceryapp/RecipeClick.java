@@ -7,9 +7,11 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.content.Intent;
 import android.graphics.Bitmap;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.ImageView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import java.util.ArrayList;
 
@@ -63,6 +65,18 @@ public class RecipeClick extends AppCompatActivity {
         Intent intent = new Intent(this, Instructions.class);
         intent.putExtra("foodname", foodStrPublic);
         intent.putExtra("fooddescription", foodDescriptionPublic);
+        startActivity(intent);
+    }
+
+    public void addToCart(View v){
+        String name = ((MyApplication) this.getApplication()).getUsername();
+        CartDatabase cartDatabase = new CartDatabase(this);
+        CartModel cartModel = new CartModel(foodStrPublic,name);
+        boolean success = cartDatabase.addData(cartModel);
+        Toast.makeText(this, "Item added to cart.", Toast.LENGTH_SHORT).show();
+    }
+    public void goToAllRecipe (View v){
+        Intent intent = new Intent(this, RecipePage.class);
         startActivity(intent);
     }
 }

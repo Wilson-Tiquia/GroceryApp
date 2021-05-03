@@ -43,25 +43,25 @@ public class CartDatabase extends SQLiteOpenHelper {
         }
     }
 
-    public ArrayList<String> getAllItemsInCart (){
+    public ArrayList<String> getAllItemsInCart (String username){
         ArrayList<String> dishName = new ArrayList<String>();
-        String queryGetAll = "SELECT * FROM " + CARTS_TABLE;
+        String queryGetAll = "SELECT * FROM CartsTable WHERE Username = ?";
         SQLiteDatabase db = this.getReadableDatabase();
-        Cursor cursor = db.rawQuery(queryGetAll, null);
+        Cursor cursor = db.rawQuery(queryGetAll, new String[]{username});
         while(cursor.moveToNext()){
-            String dish = cursor.getString(0);
+            String dish = cursor.getString(1);
             dishName.add(dish);
         }
         return dishName;
     }
 
-    public void deleteItemInCart(String foodname){
+    public void deleteItemInCart(String foodname, String username){
         SQLiteDatabase db = this.getReadableDatabase();
         SQLiteDatabase db2 = this.getWritableDatabase();
 
-        Cursor cursor = db.rawQuery("SELECT RecipeName FROM CartsTable WHERE RecipeName = ? LIMIT 1", new String[]{foodname});
+        Cursor cursor = db.rawQuery("SELECT RecipeName FROM CartsTable WHERE RecipeName = ? AND Username = ? LIMIT 1", new String[]{foodname,username});
         if (cursor.moveToFirst()){
-            db2.execSQL("DELETE FROM CartsTable WHERE RecipeName = ?",new String[]{foodname});
+            db2.execSQL("DELETE FROM CartsTable WHERE RecipeName = ? AND Username = ?",new String[]{foodname,username});
         }
     }
 

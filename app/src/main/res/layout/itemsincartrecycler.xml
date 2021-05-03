@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#FFFFFF"
+    android:orientation="vertical">
+
+
+    <ImageView
+        android:id="@+id/ulampic"
+        android:layout_width="120dp"
+        android:layout_height="91dp"
+        app:srcCompat="@drawable/user_2" />
+
+    <TextView
+        android:id="@+id/ulamname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="110dp"
+        android:layout_marginTop="-55dp"
+        android:layout_weight="1"
+        android:text="Dish Name"
+        android:textAlignment="textStart" />
+
+    <TextView
+        android:id="@+id/ulamprice"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="15dp"
+        android:text="Dish Price"
+        android:textAlignment="textEnd" />
+
+    <TextView
+        android:id="@+id/ingredientss"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="96dp"
+        android:layout_marginTop="35dp"
+        android:text="TextView" />
+
+
+
+</LinearLayout>

@@ -12,7 +12,10 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.GroceryApp.NoActionBar">
-        <activity android:name=".Instructions"></activity>
+        <activity android:name=".success"></activity>
+        <activity android:name=".CheckOutPage" />
+        <activity android:name=".CartPage" />
+        <activity android:name=".Instructions" />
         <activity android:name=".RecipeClick" />
         <activity android:name=".RecipePage" />
         <activity android:name=".GroceryItem" />

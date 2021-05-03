@@ -31,7 +31,6 @@ public class LogIn extends AppCompatActivity {
         // database check
         DataBaseHelper dataBaseHelper = new DataBaseHelper(LogIn.this);
         if(dataBaseHelper.isAccountExisting(registrationModel)){
-            Toast.makeText(this, "MAY GANTONG ACC", Toast.LENGTH_SHORT).show();
             Intent intent = new Intent(this, LandingPage.class);
             MyApplication ma = new MyApplication();
             ma.setUsername(registrationModel.getUsername());
@@ -39,7 +38,7 @@ public class LogIn extends AppCompatActivity {
             finish();
         }
         else{
-            Toast.makeText(this, "WALANG GANYANG ACC", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "The user does not exist.", Toast.LENGTH_SHORT).show();
         }
 
 

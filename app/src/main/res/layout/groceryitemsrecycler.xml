@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:layout_marginTop="25dp">
+
+    <TextView
+        android:id="@+id/textView9"
+        android:layout_width="144dp"
+        android:layout_height="198dp"
+        android:background="@drawable/landingpagebackground" />
+
+    <ImageView
+        android:id="@+id/groceryItemImage"
+        android:layout_width="117dp"
+        android:layout_height="99dp"
+        android:layout_marginTop="-180dp"
+        app:srcCompat="@drawable/user_2" />
+
+    <TextView
+        android:id="@+id/groceryItemName"
+        android:layout_width="130dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="PRICE "
+        android:textColor="@color/black" />
+
+    <TextView
+        android:id="@+id/groceryItemPrice"
+        android:layout_width="wrap_content"
+        android:gravity="center"
+        android:layout_height="wrap_content"
+        android:text="NAME"
+        android:textColor="@color/black" />
+</LinearLayout>
