@@ -62,14 +62,13 @@ public class EmailVerification extends AppCompatActivity {
             Toast.makeText(this, "Success  " + success, Toast.LENGTH_SHORT).show();
 
 
-
             // redirect to login page
             Intent goToLogin = new Intent(this, LogIn.class);
             startActivity(goToLogin);
             finish();
         }
         else{
-            Toast.makeText(this, "INCORRECT VERIF CODE TANGA MO ", Toast.LENGTH_SHORT).show();
+            Toast.makeText(this, "INCORRECT VERIF CODE  ", Toast.LENGTH_SHORT).show();
         }
     }
 
